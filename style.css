@@ -30,6 +30,18 @@
     /* backdrop-filter: blur(1rem); */
 }
 
+@supports (backdrop-filter: blur(1rem)){
+    .primary-navigation {
+        background: hsl(0, 0%, 100%,0.05);
+        backdrop-filter: blur(10rem);
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
 a {
     text-decoration: none;
     font-size: large;
@@ -79,22 +91,11 @@ a {
     
     a {
         text-decoration: none;
-        color: black;
+        color: white;
     }
     
 }
 
-@supports (backdrop-filter: blur(1rem)){
-    .primary-navigation {
-        background: hsl(0, 0%, 100%,0.05);
-        backdrop-filter: blur(5rem);
-    }
-
-    a {
-        text-decoration: none;
-        color: white;
-    }
-}
 
 @media (min-width: 35em) {
     .primary-navigation {
