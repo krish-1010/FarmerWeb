@@ -26,21 +26,21 @@
     padding: 0;
     margin: 0;
 
-    background: hsl(0, 0%, 0%,0.75);
+    background: hsl(0, 0%, 0%,0.95);
     /* backdrop-filter: blur(1rem); */
 }
 
-@supports (backdrop-filter: blur(1rem)){
+/* @supports (backdrop-filter: blur(1rem)){
     .primary-navigation {
-        background: hsl(0, 0%, 100%,0.05);
-        backdrop-filter: blur(10rem);
+        background: hsl(0, 0%, 100%,1);
+        backdrop-filter: blur(1000rem);
     }
 
     a {
         text-decoration: none;
         color: white;
     }
-}
+} */
 
 a {
     text-decoration: none;
@@ -50,7 +50,7 @@ a {
     color: white;
 }
 
-@media (max-width: 35em) {
+@media (max-width: 70em) {
     .primary-navigation {
         --gap: 2em;
 
@@ -120,5 +120,116 @@ body {
 
 .primary-header {
     background-color: black;
+}
+
+
+.testimonial-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-areas: 
+     'one'
+     'two'
+     'three'
+     'four'
+     'five'
+     'six'
+     'seven'
+     'eight'
+     'nine';
+    padding-block: 2rem;
+    width: 70%;
+    margin-inline: auto;
+}
+
+.testimonial:nth-child(1){
+    grid-area: one;
+}
+
+.testimonial:nth-child(2){
+    grid-area: two;
+}
+
+.testimonial:nth-child(3){
+    grid-area: three;
+}
+
+.testimonial:nth-child(4){
+    grid-area: four;
+}
+
+.testimonial:nth-child(5){
+    grid-area: five;
+}
+
+.testimonial:nth-child(6){
+    grid-area: six;
+}
+
+.testimonial:nth-child(7){
+    grid-area: seven;
+}
+
+.testimonial:nth-child(8){
+    grid-area: eight;
+}
+
+.testimonial:nth-child(9){
+    grid-area: nine;
+}
+
+.testimonial {
+    background-color: pink;
+    /* text-align: center;
+    vertical-align: middle;
+    line-height: 16rem; */
+}
+
+@media (min-width: 30em) {
+    .testimonial-grid {
+        grid-template-areas: 
+        'one five six'
+        'two five seven'
+        'three five eight'
+        'four five nine'
+        ;
+    }
+
+    .testimonial {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: lightgreen;
+        background-color: darkgreen;
+    }
+}
+
+@media (max-width: 70rem) {
+    .testimonial-grid {
+        grid-template-areas: 
+     'one'
+     'two'
+     'three'
+     'four'
+     /* 'five' */
+     'six'
+     'seven'
+     'eight'
+     'nine';
+    }
+
+    .testimonial {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .primary-navigation {
+        padding-block: 10em;
+    }
+
+    .testimonial:nth-child(5){
+        display: none;
+    }
+    
 }
 
