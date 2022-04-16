@@ -98,8 +98,7 @@ a {
     a {
         text-decoration: none;
         color: white;
-    }
-    
+    } 
 }
 
 
@@ -192,6 +191,10 @@ body {
     padding-right: 50px; 
 }
 
+.testimonial:hover{
+    background-color: var(--hovercolor);
+}
+
 @media (min-width: 30em) {
     .testimonial-grid {
         grid-template-areas: 
@@ -210,6 +213,12 @@ body {
         /* background-color: #0E3525; */
         /* background-color: #274A3B; */
     }
+
+    .testimonial:hover{
+        color: white;
+        cursor: pointer;
+    }
+
 }
 
 @media (max-width: 70rem) {
@@ -230,6 +239,11 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .testimonial:hover{
+        color: white;
+        cursor: pointer;
     }
 
     .primary-navigation {
