@@ -135,6 +135,10 @@ body {
 
 }
 
+
+
+
+
 .primary-header {
     background-color: black;
 }
@@ -206,6 +210,11 @@ body {
 
 .testimonial:hover{
     background-color: var(--hovercolor);
+}
+
+
+.testimonial:nth-child(5) {
+    min-width: 300px;
 }
 
 

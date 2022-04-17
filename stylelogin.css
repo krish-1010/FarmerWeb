@@ -1,0 +1,38 @@
+body {
+    background-color: #ddd;
+}
+
+.container {
+    padding-block: 20px;
+    width: 500px;
+    background-color: aliceblue;
+    margin: 0 auto;
+    margin-top: 250px;
+}
+
+.tbox {
+    width: 350px;
+    height: 30px;
+    margin: 5px;
+    margin-left: 20px;
+}
+
+.btn {
+    margin-left: 20px;
+    font-size: medium;
+    margin-right: 10px;
+}
+
+.forgot {
+   font-size: larger; 
+}
+
+.box {
+    width: 400px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 0;
+}
