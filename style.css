@@ -14,6 +14,7 @@ h1{
     text-align: center;
     margin-top: 0;
     font-size: 3em;
+    color: white;
 }
 
 .logo {
@@ -206,6 +207,7 @@ body {
     padding-left: 50px;
     padding-right: 50px; 
     font-size: 1.5em;
+    color: var(--textcolor);
 }
 
 .testimonial:hover{
@@ -269,9 +271,11 @@ body {
         align-items: center;
         background-color: var(--hovercolor);
         font-size: 0.9em;
+        color: var(--textcolor);
     }
 
     h1 {
+        color: white;
         font-size: 2em;
     }
 
@@ -297,6 +301,10 @@ h5 {
     text-align: center;
     color: var(--textcolor);
     margin-bottom: 0;
+}
+
+h1 {
+    color: white;
 }
 
 body {
