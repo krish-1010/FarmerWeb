@@ -74,7 +74,7 @@ a {
         inset: 0 0 0 60%;
 
         flex-direction: column;
-        /* padding: min(10vh, 40rem) 2em; */
+        padding: min(10vh, 40rem) 2em;
         text-decoration: none;   
         list-style: none;
         
@@ -287,6 +287,7 @@ body {
 
     .primary-navigation {
         padding-block: 3em;
+        /* padding-left: 5px; */
         /* position: fixed; */
     }
 
