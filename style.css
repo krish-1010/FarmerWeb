@@ -74,10 +74,10 @@ a {
         inset: 0 0 0 60%;
 
         flex-direction: column;
-        padding: min(30vh, 10rem) 2em;
+        /* padding: min(10vh, 40rem) 2em; */
         text-decoration: none;   
         list-style: none;
-        /* font-size: 3em; */
+        
 
         transform: translateX(100%);
         transition: transform 350ms ease-in;
@@ -119,7 +119,6 @@ a {
     .primary-navigation {
         --gap: clamp(1.5rem, 5vw, 3rem);
         padding-block: 2rem;
-        padding-top: 1.5rem;
         padding-inline: clamp(3rem, 8vw, 10rem);
     } 
 }
@@ -287,7 +286,8 @@ body {
     }
 
     .primary-navigation {
-        padding-block: 10em;
+        padding-block: 3em;
+        /* position: fixed; */
     }
 
     .testimonial:nth-child(5){
